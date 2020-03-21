@@ -8,11 +8,60 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
-    <div>
+    <form action="/subscribe" method="post">
+        <fieldset>
+            <legend>Personal information</legend>
+            <p>
+                <label>First name:</label><br>
+                <input type="text" name="first_name">
+            </p>
+            <p>
+                <label>Last name:</label><br>
+                <input type="text" name="last_name">
+            </p>
+            <p>
+                <label>E-mail:</label><br>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Gender:</label><br>
+                <label>
+                    <input type="radio" name="title" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="title" value="female">
+                    Female
+                </label></p>
+            <p><label>Languages:</label><br>
+                <label>
+                    <input type="checkbox" value="terms">
+                    English
 
-    </div>
-    <p> Hi world</p>
+                </label>
+                <label>
+                    <input type="checkbox" value="terms">
+                    Spanish
+
+                </label>
+                <label>
+                    <input type="checkbox" value="terms">
+                    Hindi
+                </label></p>
+            <p>Comments</p>
+
+            <form action="/action_page.php">
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <p>
+                    <button>Send</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+
+
+
+        </fieldset>
+    </form>
 </body>
 
 </html>
