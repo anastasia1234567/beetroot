@@ -1,0 +1,142 @@
+/* body {
+    font-size: 200%;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3399cc;
+}
+
+h3 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.cities {
+    width: 500px;
+    margin: auto;
+    font-family: sans-serif;
+    text-align: center;
+    overflow: auto;
+    /* list-style: none;
+    font-family: sans-serif;
+    text-align: center; */
+}
+
+.cities-item {
+    float: left;
+    width: 100px;
+    display: block;
+    color: white;
+    padding: 10px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.cities-item:hover {
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.cities-item:nth-child(1) {
+    background-color: #3399cc;
+    width: 200px;
+    border: solid 2px white;
+}
+
+.cities-item:nth-child(2) {
+    background-color: #33cccc;
+    width: 100px;
+    border-top: solid 2px white;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(3) {
+    background-color: #996699;
+    width: 100px;
+    border-top: solid 2px white;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(4) {
+    background-color: #c24747;
+    width: 100px;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(5) {
+    background-color: #e2674a;
+    width: 100px;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(6) {
+    background-color: #ffcc66;
+    width: 100px;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(7) {
+    background-color: #99cc99;
+    width: 100px;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(8) {
+    background-color: #669999;
+    width: 100px;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(9) {
+    background-color: #cc6699;
+    width: 200px;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.cities-item:nth-child(10) {
+    background-color: #339966;
+    width: 100px;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.last {
+    clear: left;
+    width: 400px;
+    background-color: #666699;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+p {
+    opacity: .5;
+}
+
+footer {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
