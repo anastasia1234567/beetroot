@@ -1,0 +1,130 @@
+ /* body {
+     font-size: 200%;
+ } */
+
+ * {
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: #3081ac;
+     font-family: sans-serif;
+     color: white;
+ }
+
+ .content {
+     background-color: #3399cc;
+     margin: 25px;
+ }
+
+ .box {
+     padding: 20px 350px;
+     height: 640px;
+ }
+
+ /* header {
+     /* font-family: sans-serif; */
+
+ /* color: white; */
+
+ /* text-align: center; */
+
+ /* display: block;} */
+
+ .cities {
+     /* width: 50%;
+     /* display: block; */
+     /* margin: auto; */
+     /* font-family: sans-serif; */
+     text-align: center;
+     overflow: auto;
+     border: solid 2px white;
+     list-style: none;
+     font-size: 0;
+     padding: 0;
+ }
+
+ .cities-item {
+     display: inline-block;
+     /* margin: 5px, 0; */
+     font-size: 18px;
+     /* width: 100%; */
+     /* color: white; */
+     /* padding: 10px; */
+     border: solid 2px white;
+     padding-bottom: 20px;
+     padding-top: 20px;
+ }
+
+ ul:hover li:not(:hover) {
+     opacity: .5;
+ }
+
+ .cities-item:nth-child(1) {
+     background-color: #3399cc;
+     width: 50%;
+ }
+
+ .cities-item:nth-child(2) {
+     background-color: #33cccc;
+     width: 25%;
+ }
+
+ .cities-item:nth-child(3) {
+     background-color: #996699;
+     width: 25%;
+ }
+
+ .cities-item:nth-child(4) {
+     background-color: #c24747;
+     width: 25%;
+ }
+
+ .cities-item:nth-child(5) {
+     background-color: #e2674a;
+     width: 25%;
+ }
+
+ .cities-item:nth-child(6) {
+     background-color: #ffcc66;
+     width: 25%;
+ }
+
+ .cities-item:nth-child(7) {
+     background-color: #99cc99;
+     width: 25%;
+ }
+
+ .cities-item:nth-child(8) {
+     background-color: #669999;
+     width: 25%;
+ }
+
+ .cities-item:nth-child(9) {
+     background-color: #cc6699;
+     width: 50%;
+ }
+
+ .cities-item:nth-child(10) {
+     background-color: #339966;
+     width: 25%;
+ }
+
+ .last {
+     clear: left;
+     width: 100%;
+     background-color: #666699;
+ }
+
+ p {
+     opacity: .5;
+ }
+
+ footer {
+     margin-top: 20px;
+     color: white;
+     /* text-align: center;
+     font-size: 13px;
+     padding-top: 10px;
+     font-family: sans-serif; */
+ }
