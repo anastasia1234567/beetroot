@@ -53,7 +53,7 @@ p[class^="paragraph"] {
 }
 
 .q::before {
-    content: " “ ";
+    content: open-quote;
     padding-right: 7px;
     font-size: 50px;
 }
