@@ -40,7 +40,7 @@ body {
 }
 
 .gallery__item {
-    padding-left: 30px;
+    margin-left: 30px;
     position: relative;
     transition: all 0.5s;
 }
@@ -53,7 +53,7 @@ body {
     position: absolute;
     text-align: center;
     top: 30px;
-    left: 60px;
+    left: 30px;
     width: 60px;
     height: 60px;
     border-radius: 5px;
