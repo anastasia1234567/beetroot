@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 508px;
+    height: 618px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-image: url(./img/image\ 1.png);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid gray;
+}
+
+.login-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 45px;
+    width: 380px;
+    height: 125px;
+    left: 64px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.login-form__title {
+    margin-top: 58px;
+    padding-bottom: 55px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.login-form__email {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.login-form__password {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.help-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+.login-form__forgot-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 150px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.login-form__submit_btn {
+    margin-top: 50px;
+    margin-left: 131px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    width: 194px;
+    height: 56px;
+    background: linear-gradient(219.67deg, #5E94F5 46.47%, rgba(227, 90, 255, 0.87) 118.9%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.login-form__submit_btn:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+.login-form__join-text {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.join {
+    color: #fff;
+    cursor: pointer;
+}
+
+input:required+.help-text::before {
+    content: '*Required';
+    font-size: 12px;
+}
+
+input:valid {
+    border-color: rgb(84, 158, 243);
+}
+
+input:invalid {
+    border-color: rgba(227, 90, 255);
+}
+
+input:invalid:focus {
+    border-color: rgb(214, 35, 80);
+}
+
+input:invalid+.help-text {
+    color: #5E94F5;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+input[type='email']:invalid+.help-text::before {
+    content: 'You must enter a valid email.'
+}
