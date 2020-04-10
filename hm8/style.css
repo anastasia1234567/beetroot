@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #b07cf7;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-heder {
+    text-align: center;
+}
+
+.main-heder__title {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+.main-header__description {
+    padding: 15px 300px 47px 300px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    opacity: 0.9;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    margin-left: 30px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.gallery__item:hover {
+    transform: scale(1.1);
+}
+
+.post__lable {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+.post__day {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.post__month {
+    font-size: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 25px;
+    opacity: 1;
+}
+
+.post__descr {
+    color: #fff;
+    position: absolute;
+    top: 209px;
+    right: 43px;
+    left: 45px;
+    bottom: 23px;
+}
+
+.post__text {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.post__author {
+    padding-top: 28px;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    opacity: 0.8;
+}
+
+.btn-wrapper {
+    position: relative;
+    padding: 80px 650px 120px 650px;
+}
+
+.btn-wrapper__btn {
+    width: 200px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f72b3b;
+    border: none;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: margin-left 4s 1s;
+    cursor: pointer;
+}
+
+.btn-wrapper__btn:hover {
+    transform: scale(0.9, 0.9);
+}
