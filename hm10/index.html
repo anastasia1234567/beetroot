@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>LogIn Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="login-form">
+            <h1 class="login-form__title">Lush</h1>
+            <div class="login-form__wrapper">
+                <p class="login-form__email"> <input name="email" type="email" id="valid-email" placeholder="Email"
+                        required>
+                    <span class="help-text"></span>
+                </p>
+                <p class="login-form__password"><input minlength="6" name="pass" type="password" id="valid-password"
+                        placeholder="Password" required>
+                    <span class="help-text"> (min 6 simbols)</span>
+                </p>
+            </div>
+            <a href="#" class="login-form__forgot-password">Forgot your password?</a>
+
+            <button class="login-form__submit_btn" type="submit">Login</button>
+            <p class="login-form__join-text">Don’t have an account?<a href="#" class="join">Join us</a></p>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
