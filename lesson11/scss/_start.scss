@@ -1,0 +1,84 @@
+
+.start{
+    background-color: #f9f8fb;
+.main-container{
+    position: relative;
+    height: 996px;
+    background-image: url(../img/srawberry.png);
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+} 
+.logo__name {
+    font-family: 'Pacifico', cursive;
+    color: #262626;
+    font-size: 50px;
+    margin-top: 30px;
+    padding-left: 162px;
+}
+
+.main-header {
+    font: 100% $font-stack;
+    display: flex;
+}
+
+
+.head__nav{
+    position: absolute;
+    top: 55px;
+    right: 162px;
+.nav__list {
+    display: flex;
+    flex-direction: row;}
+    .nav__item{
+        display: flex;
+        margin-left: 40px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .nav--active::before{
+        content: '';
+        position: relative;
+        bottom:5px;
+        left: 48px;
+        width: 50px;
+        height: 3px;
+        background-color: #ff6033;
+
+    }
+}
+
+ .big-screen {
+     margin-top: 300px;
+     margin-left: 154px;
+     display: flex;
+     flex-direction: column;
+   .big-screen__title{
+    font-size: 60px;
+    font-weight: 900;
+   }
+   .big-screen__content{
+    margin-top: 34px;
+    font-size: 17px;
+    width: 368px;
+    font: 100% $font-stack;
+    line-height: 27px;
+    color: #262626;
+   }
+   .btn-wrapper{
+        margin-top: 34px;
+        position: relative;
+        margin-top: 30px;
+        line-height: 55px;
+    
+        .btn-wrapper--btn{
+            padding: 20px 25px 20px 25px;
+            background-color: #ff6033;
+        }
+    }
+
+}
+.wrapper__img-scroll{
+   margin-top: 180px;
+   margin-left: 600px;}

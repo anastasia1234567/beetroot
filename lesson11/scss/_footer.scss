@@ -1,0 +1,32 @@
+.footer{
+    .main-container{
+        height: 90px;
+    }
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #262626;
+    color: #b9b9b9;
+
+    .footer__company{
+        font: 100% $font-stack;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .footer__logo-name{
+        font-family: 'Pacifico', cursive;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .footer__sign{
+        font-size: 15px;
+
+        .footer__sign-word{
+            color: #ff2b58;
+            font-weight: 700;
+        }
+    }
+}
