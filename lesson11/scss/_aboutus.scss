@@ -1,0 +1,27 @@
+.about{
+    background-color: #00c4c4;
+ 
+    .main-container{
+        background-image: url('../img/cup.png');
+        background-repeat: no-repeat;
+        height: 700px;
+ 
+    }
+}
+.about-conteiner{
+    display: inline-block;
+    margin-top: 179px;
+    margin-left: 835px;
+    color: #fff;
+        .about__title{
+            font-size: 90px;
+            font-weight: 700;
+        }
+         .about__content{
+             font-size: 17px;
+             width: 500px;
+             font: 100% $font-stack;
+             line-height: 27px;
+        }
+
+}

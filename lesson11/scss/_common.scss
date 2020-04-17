@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body {
+    background: white;
+}
+.main-container{
+    width: 1500px;
+    margin: auto;
+}
+
+.title{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.btn-wrapper--btn{
+    border: none;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: margin-left 4s 1s;
+    cursor: pointer;
+
+}
+.btn-wrapper--btn:hover {
+    transform: scale(0.9, 0.9);
+}

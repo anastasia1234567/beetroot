@@ -1,0 +1,78 @@
+
+.contact {
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../img/contact_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contact .main-container{
+    height: 866px;
+    }
+
+.contact__main-header {
+    text-align: center;
+}
+
+.contact__title {
+    color: #262626;
+    font-size: 90px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+.contact__description{
+
+    color: #262626;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+.contact__main-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.contact__form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .form-item{
+        font-size: 15px;
+        font: 100% $font-stack;
+        margin-bottom: 15px;
+        width: 500px;
+        height: 50px;
+        background-color: rgb(0, 196, 196, 0.5);
+        border: none;
+        
+    }
+}
+
+
+.form-item:hover{
+background-color: #00c4c4;
+}
+// .form-item:hover::before{
+//     content: '';
+// padding-left: 10px;
+// width: 5px;
+// height: 50px;
+// background-color: #355b82;
+// }
+
+.textarea{
+    color: white;
+    font-size: 15px;
+    font: 100% $font-stack;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(0, 196, 196, 0.5);
+    border: none;
+}
