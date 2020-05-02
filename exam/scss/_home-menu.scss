@@ -1,0 +1,48 @@
+.home-menu-section{
+background-color: $primary-color;
+padding-top: 28px;
+padding-bottom: 32px;
+
+}
+.hamburger{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    padding-top: 6px;
+
+    &__item{
+        margin: 0 auto;
+        display: flex;
+        padding-right: 46px;
+        font: 100% $font-stack1;
+        color: $font-color;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase; 
+    }
+
+}
+@media only screen and (max-width: 900px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    .menu .logo{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .list{
+        &__item{
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}

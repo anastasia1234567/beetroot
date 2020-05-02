@@ -1,0 +1,31 @@
+.second-book-section{
+    background-image: url(../img/bg-spain2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 229px;
+    padding-bottom: 100px;
+
+ .book-wrap{
+     display: flex;
+     justify-content:flex-end;
+ }
+}
+
+.book .btn{
+    padding: 24px 63px 23px 62px;
+}
+
+@media only screen and (max-width: 900px) {
+    .book-section{
+        padding-top: 130px;
+        padding-bottom: 50px;
+    }
+    .book-wrap{
+        justify-content:center;
+        align-items: center;
+    }
+    .book{
+        text-align: center;
+    }
+}

@@ -1,0 +1,79 @@
+.home{
+    background-color:#03579d;
+    background-image: url(../img/bg-home.png);
+    height: 820px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .logo{
+        font-size: 48px;
+        letter-spacing: 4.8px;
+        text-align: center;
+        padding-top: 265px;
+    }
+    .subtitle{
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 6.82px;
+        padding-bottom: 50px;
+    }
+}
+
+.form-wrap{
+    background-color: $font-color;
+    max-width: 648px;
+    margin: 0 auto;  
+}
+.search-form{
+    display: flex;
+    
+}
+.search-field{
+    width: 300px;
+    border: none;
+    color: #999999;
+    font: 100% $font-stack;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.8px;
+    margin: auto;
+    text-align: center;
+    
+}
+.home .btn{
+    padding: 20px 20px 20px 32px;
+    border: 2px solid $font-color;
+    background-image: none;
+}
+.img-btn-search{
+    padding-left: 15px;
+}
+.scroll{
+    text-align: center;
+
+    .subtitle{
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        padding-bottom: 15px;
+        padding-top: 120px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .home .logo{
+        font-size: 40px;
+        letter-spacing: 3.2px;
+}
+    .form-wrap{
+        max-width: 400px; 
+}
+.search-field{
+    width: 200px;}
+    .home .btn{
+        padding: 10px 20px 10px 20px;
+
+    }
+    .img-btn-search{
+        display: none;
+    }
+}
