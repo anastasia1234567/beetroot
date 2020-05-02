@@ -71,6 +71,7 @@
         padding-bottom: 50px;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         .choose__content{
             align-items: center;
         }
@@ -85,3 +86,8 @@
             padding-top: 20px;
        }
 }}
+@media only screen and (max-width: 425px) {
+    .choose__img{
+        max-width: 250px;
+      }
+}

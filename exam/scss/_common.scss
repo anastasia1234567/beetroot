@@ -8,7 +8,7 @@ html{
 }
 .page-container{
   margin: 15px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 //Main container for all sections
@@ -36,6 +36,8 @@ html{
   }
 //Main btn style
 .btn{
+  background: linear-gradient(45deg, #496bfe 40%, #5474fd 40%);
+  font-size: 20px;
     background-color: $primary-color;
     border: none;
     color: $font-color;
@@ -47,9 +49,6 @@ html{
     text-transform: uppercase;
     transition: margin-left 4s 1s;
     cursor: pointer;
-    background-image: url(../img/rectangle.png);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
  .btn-wrap:hover {
     transform: scale(0.95, 0.95);

@@ -22,3 +22,12 @@
         height: 18px;
     }
 }
+.icon:hover{
+    fill:#5474fd;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer{
+        padding-top: 60px;
+    }
+}

@@ -10,7 +10,6 @@ html {
 
 .page-container {
   margin: 15px;
-  overflow: hidden;
 }
 
 .container {
@@ -36,6 +35,8 @@ html {
 }
 
 .btn {
+  background: linear-gradient(45deg, #496bfe 40%, #5474fd 40%);
+  font-size: 20px;
   background-color: #5474fd;
   border: none;
   color: #fff;
@@ -47,9 +48,6 @@ html {
   text-transform: uppercase;
   transition: margin-left 4s 1s;
   cursor: pointer;
-  background-image: url(../img/rectangle.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .btn-wrap:hover {
@@ -165,7 +163,7 @@ html {
 
 @media only screen and (max-width: 900px) {
   .home .logo {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 3.2px;
   }
 
@@ -189,6 +187,9 @@ html {
   background-color: #5474fd;
   padding-top: 28px;
   padding-bottom: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .hamburger {
@@ -217,19 +218,17 @@ html {
 
 @media only screen and (max-width: 900px) {
   .menu {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     justify-content: space-around;
   }
 
-  .menu .logo {
+  .list {
     display: none;
   }
-}
-@media only screen and (max-width: 700px) {
-  .list__item {
-    font-size: 12px;
-    text-align: center;
+
+  .hamburger {
+    display: flex;
   }
 }
 .choose-section {
@@ -303,6 +302,7 @@ html {
     padding-bottom: 50px;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .choose .choose__content {
     align-items: center;
@@ -318,6 +318,11 @@ html {
     padding-top: 20px;
   }
 }
+@media only screen and (max-width: 425px) {
+  .choose__img {
+    max-width: 250px;
+  }
+}
 .info-section {
   background-color: #333333;
   padding-top: 46px;
@@ -326,7 +331,7 @@ html {
 
 .info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .info__item {
   display: flex;
@@ -342,11 +347,27 @@ html {
 .info__img {
   padding: 18px;
 }
+.info__arc-wrap {
+  overflow: hidden;
+  height: 18px;
+}
+.info__arc {
+  width: 300px;
+  height: 95px;
+  border: 5px dotted #ffffff;
+  border-radius: 400px 400px 101px 101px/95px 95px 64px 64px;
+}
 .info .title {
+  font-size: 27px;
   padding-top: 15px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
+  .info__arc-wrap {
+    display: none;
+  }
+
   .info {
     flex-direction: column;
   }
@@ -377,8 +398,11 @@ html {
   padding-top: 229px;
   padding-bottom: 100px;
 }
-.second-book-section .book-wrap {
+
+.book-wrap {
   display: flex;
+}
+.book-wrap--align {
   justify-content: flex-end;
 }
 
@@ -386,6 +410,12 @@ html {
   padding: 24px 63px 23px 62px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .book-section {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
 @media only screen and (max-width: 900px) {
   .book-section {
     padding-top: 130px;
@@ -399,6 +429,11 @@ html {
 
   .book {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .book .btn {
+    padding: 24px 40px 23px 40px;
   }
 }
 .comments-section {
@@ -419,12 +454,13 @@ html {
   justify-content: center;
 }
 .comments__img {
-  max-width: 445px;
-  max-height: 284px;
+  max-width: 100%;
+  display: block;
 }
 .comments__block {
   background-color: #333333;
   padding: 38px 54px 37px 60px;
+  flex: 1;
 }
 .comments .icon {
   width: 30px;
@@ -434,8 +470,17 @@ html {
 }
 
 @media only screen and (max-width: 1200px) {
-  .comments__img {
-    display: none;
+  .comments-section {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .comments__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .comments .title {
+    padding-bottom: 40px;
   }
 }
 .footer {
@@ -462,4 +507,14 @@ html {
   fill: #e8e8e8;
   width: 17px;
   height: 18px;
+}
+
+.icon:hover {
+  fill: #5474fd;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+  }
 }

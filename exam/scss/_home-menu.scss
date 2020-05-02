@@ -1,7 +1,10 @@
 .home-menu-section{
-background-color: $primary-color;
-padding-top: 28px;
-padding-bottom: 32px;
+    background-color: $primary-color;
+    padding-top: 28px;
+    padding-bottom: 32px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
 }
 .hamburger{
@@ -29,20 +32,17 @@ padding-bottom: 32px;
 }
 @media only screen and (max-width: 900px) {
     .menu{
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         justify-content: space-around;
-    }
-    .menu .logo{
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 700px) {
-    .list{
-        &__item{
-            font-size: 12px;
-            text-align: center;
-        }
     }
+    .list{
+        display: none;
+          }
+  
+    .hamburger{
+        display: flex;
+    }
+
 }
