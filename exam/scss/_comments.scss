@@ -1,0 +1,49 @@
+.comments-section{
+    background-image: url(../img/bg-comments.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+.comments{
+    .title{
+        text-align: center;
+        padding-bottom: 94px;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+    }
+    &__img{
+        max-width: 100%;
+        display: block;
+
+    }
+    &__block{
+        background-color: $bg-color1;
+        padding: 38px 54px 37px 60px;
+        flex: 1;
+    }
+    .icon{
+        width: 30px;
+        height: 20px;
+        padding-right: 8px;
+        padding-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .comments-section{
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    .comments{
+        &__content{
+            flex-direction: column;
+            align-items: center;
+        }
+        .title{
+            padding-bottom: 40px;}
+
+}
+}

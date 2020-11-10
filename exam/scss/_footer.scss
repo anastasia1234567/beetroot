@@ -1,0 +1,33 @@
+.footer{
+    background-color: $bg-color2;
+    padding-top: 120px;
+    padding-bottom: 52px;
+    &__content{
+       text-align: center;
+    }
+    .subtitle{
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        padding-bottom: 31px;
+    }
+}
+.social{
+    width: 166px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    .icon{
+        fill: #e8e8e8;
+        width: 17px;
+        height: 18px;
+    }
+}
+.icon:hover{
+    fill:#5474fd;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer{
+        padding-top: 60px;
+    }
+}
